@@ -35,31 +35,30 @@
 
         /* Center Contact Section */
         #contact {
-            flex: 1; /* Allow the contact section to expand and push footer down */
+            flex: 1; /* Allow the contact section to expand */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px; /* Add some padding for breathing room */
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+            padding: 20px;
         }
 
         /* Form Layout */
         #contact form {
             display: flex;
-            align-items: flex-start; /* Align fields and button to the top */
+            align-items: center; /* Align inputs and button */
             justify-content: center;
             flex-direction: row; /* Place fields and button horizontally */
             width: 100%;
-            max-width: 700px; /* Limit the form width */
-            gap: 40px; /* Add space between fields and the button */
+            max-width: 700px; /* Limit form width */
+            gap: 40px; /* Space between fields and button */
         }
 
-        /* Left Side Fields (Name, Email, Message) */
+        /* Left Side Fields */
         .form-fields {
             display: flex;
             flex-direction: column;
             flex: 1;
-            gap: 15px; /* Add spacing between input fields */
+            gap: 15px; /* Spacing between inputs */
         }
 
         .form-fields label {
@@ -76,9 +75,9 @@
             font-size: 1rem;
         }
 
-        /* Send Message Button */
+        /* Send Button */
         .send-button {
-            align-self: center; /* Center vertically relative to input fields */
+            align-self: center; /* Vertically center relative to inputs */
             margin-top: 10px;
         }
 
@@ -130,8 +129,6 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact OT3 Photography</h2>
-        <p>Feel free to reach out for any inquiries or collaborations.</p>
         <form action="submit_form.php" method="post">
             <!-- Form Fields -->
             <div class="form-fields">
