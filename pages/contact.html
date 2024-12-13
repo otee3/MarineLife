@@ -12,26 +12,35 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-height: 80vh; /* Adjust to center vertically */
             text-align: center;
-            min-height: 80vh; /* Adjust to center within viewport height */
         }
 
+        /* Form Layout */
         #contact form {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Align fields and button at the top */
+            justify-content: center;
+            flex-direction: row; /* Keep elements horizontal */
             width: 100%;
-            max-width: 500px; /* Restrict width for better readability */
+            max-width: 700px;
+            gap: 20px; /* Add spacing between the fields and button */
         }
 
-        #contact label {
+        /* Left Side Fields (Name, Email, Message) */
+        .form-fields {
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* Take up the remaining space */
+        }
+
+        .form-fields label {
             text-align: left;
-            width: 100%;
             margin-top: 10px;
         }
 
-        #contact input,
-        #contact textarea {
+        .form-fields input,
+        .form-fields textarea {
             width: 100%;
             padding: 10px;
             margin: 5px 0;
@@ -40,15 +49,13 @@
             font-size: 1rem;
         }
 
-        /* Align submit button to the right */
-        .button-container {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
+        /* Send Message Button */
+        .send-button {
+            align-self: flex-start; /* Align button to the top */
             margin-top: 10px;
         }
 
-        #contact input[type="submit"] {
+        .send-button input[type="submit"] {
             background-color: #333;
             color: white;
             border: none;
@@ -57,7 +64,7 @@
             border-radius: 5px;
         }
 
-        #contact input[type="submit"]:hover {
+        .send-button input[type="submit"]:hover {
             background-color: #575757;
         }
     </style>
@@ -67,7 +74,6 @@
     <!-- Navigation Section -->
     <nav>
         <ul>
-            <!-- Move About to the first position -->
             <li><a href="../pages/about.html">About</a></li>
             <li><a href="../pages/marine_life.html">Marine Life</a>
                 <ul class="dropdown">
@@ -100,17 +106,20 @@
         <h2>Contact OT3 Photography</h2>
         <p>Feel free to reach out for any inquiries or collaborations.</p>
         <form action="submit_form.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <!-- Form Fields -->
+            <div class="form-fields">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
 
-            <!-- Container to push button to the right -->
-            <div class="button-container">
+            <!-- Send Message Button -->
+            <div class="send-button">
                 <input type="submit" value="Send Message">
             </div>
         </form>
