@@ -40,13 +40,21 @@
             font-size: 1rem;
         }
 
+        /* Align submit button to the right */
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
         #contact input[type="submit"] {
-            width: auto;
             background-color: #333;
             color: white;
             border: none;
             cursor: pointer;
             padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #contact input[type="submit"]:hover {
@@ -101,7 +109,10 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <input type="submit" value="Send Message">
+            <!-- Container to push button to the right -->
+            <div class="button-container">
+                <input type="submit" value="Send Message">
+            </div>
         </form>
     </section>
 
