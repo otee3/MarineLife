@@ -1,50 +1,92 @@
-/* Basic reset for the navigation */
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Reset and basic styling */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li {
-    display: inline-block;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
     position: relative;
+    margin: 0 20px;
 }
 
-/* Styling the main navigation items */
-nav a {
-    display: block;
-    padding: 10px;
+nav ul li a {
     text-decoration: none;
-    background-color: #333;
     color: white;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-nav a:hover {
-    background-color: #555;
+nav ul li a:hover {
+    color: #ecf0f1;
 }
 
-/* Hide submenus by default */
-nav ul ul {
+/* Dropdown Styling */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 180px;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
 }
 
-/* Show submenus when hovering over the parent */
-nav li:hover > ul {
-    display: block;
+.dropdown li {
+    margin: 5px 0;
 }
 
-/* Styling for dropdown links */
-nav ul ul li {
-    display: block;
-    background-color: #444;
+.dropdown li a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Add hover effect to subcategory items */
-nav ul ul li a:hover {
-    background-color: #666;
+.dropdown li a:hover {
+    color: #ecf0f1;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
