@@ -10,8 +10,10 @@
 
     <!-- Navigation Section -->
     <nav>
-        <ul>
-            <!-- Move About to the first position -->
+        <div class="logo">
+            <a href="#">OT3 Photography</a>
+        </div>
+        <ul class="nav-links">
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/marine_life.html">Marine Life</a>
                 <ul class="dropdown">
@@ -21,23 +23,29 @@
             </li>
             <li><a href="pages/reptiles.html">Reptiles</a>
                 <ul class="dropdown">
-                    <li><a href="reptiles_hawaii.html">Hawaii</a></li> <!-- Hawaii subcategory for Reptiles -->
+                    <li><a href="reptiles_hawaii.html">Hawaii</a></li>
                 </ul>
             </li>
             <li><a href="pages/birds.html">Birds</a>
                 <ul class="dropdown">
-                    <li><a href="birds_hawaii.html">Hawaii</a></li> <!-- Hawaii subcategory for Birds -->
+                    <li><a href="birds_hawaii.html">Hawaii</a></li>
                 </ul>
             </li>
             <li><a href="pages/plants.html">Plants</a>
                 <ul class="dropdown">
-                    <li><a href="plants_hawaii.html">Hawaii</a></li> <!-- Hawaii subcategory for Plants -->
+                    <li><a href="plants_hawaii.html">Hawaii</a></li>
                 </ul>
             </li>
             <li><a href="pages/surfing.html">Surfing</a></li>
-            <!-- Add the new Contact category at the end -->
             <li><a href="pages/contact.html">Contact</a></li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
     <!-- Main Content -->
@@ -50,6 +58,16 @@
     <footer>
         <p>&copy; 2024 OT3 Photography</p>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        mobileMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 
 </body>
 </html>
