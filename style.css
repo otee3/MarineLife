@@ -1,113 +1,127 @@
-/* General Page Layout */
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-h2 {
-    text-align: center;
-    color: #333;
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
 }
 
-p {
-    text-align: center;
-    color: #555;
-}
-
-/* Navigation Styles */
+/* Navigation */
 nav {
     background-color: #333;
     padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul li {
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li {
     position: relative;
 }
 
-nav ul li a {
+.nav-links a {
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    display: block;
+    padding: 10px;
 }
 
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-/* Dropdown Menu */
-nav ul li .dropdown {
+.nav-links .dropdown {
     display: none;
     position: absolute;
-    background-color: #333;
-    list-style-type: none;
-    margin-top: 5px;
-    padding: 0;
-    width: 200px;
+    top: 100%;
     left: 0;
+    background-color: #444;
+    min-width: 150px;
 }
 
-nav ul li:hover .dropdown {
+.nav-links li:hover .dropdown {
     display: block;
 }
 
-nav ul li .dropdown li a {
-    padding: 10px 20px;
-}
-
-nav ul li .dropdown li a:hover {
+.nav-links li a:hover,
+.nav-links .dropdown li a:hover {
     background-color: #575757;
 }
 
-/* Sub-Sub Dropdown - Hidden until hover on parent subcategory */
-nav ul li .dropdown li:hover .dropdown-sub {
-    display: block;
-    position: absolute;
-    left: 200px; /* Adjust if needed */
-    top: 0;
-    background-color: #333;
-    list-style-type: none;
-    margin-top: 0;
-    padding: 0;
-    width: 200px;
-}
-
-/* Make Fish Sub-Subcategory Scrollable */
-nav ul li .dropdown li .dropdown-sub {
+/* Mobile Menu Toggle */
+.menu-toggle {
     display: none;
-    max-height: 300px; /* Add this to limit the height */
-    overflow-y: auto;  /* Allow vertical scrolling */
+    cursor: pointer;
 }
 
-nav ul li .dropdown li:hover .dropdown-sub {
-    display: block;
+.menu-toggle .bar {
+    background-color: white;
+    height: 4px;
+    width: 30px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
 }
 
-nav ul li .dropdown-sub li a {
-    padding: 10px 20px;
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links .dropdown {
+        position: static;
+        display: block;
+        background-color: #444;
+    }
 }
 
-nav ul li .dropdown-sub li a:hover {
-    background-color: #575757;
+/* Main Section */
+#intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    background-color: #333;
+    color: white;
 }
