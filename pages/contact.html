@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - OT3 Photography</title>
-   <link rel="stylesheet" href="../style.css"> <!-- Adjusted to go up one level to find style.css -->
+    <link rel="stylesheet" href="../style.css"> <!-- Adjusted to go up one level to find style.css -->
+    <style>
+        /* Center Contact Section */
+        #contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 80vh; /* Adjust to center within viewport height */
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px; /* Restrict width for better readability */
+        }
+
+        #contact label {
+            text-align: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact input[type="submit"] {
+            width: auto;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Section -->
-   <nav>
+    <nav>
         <ul>
             <!-- Move About to the first position -->
             <li><a href="../pages/about.html">About</a></li>
@@ -44,14 +92,14 @@
         <h2>Contact OT3 Photography</h2>
         <p>Feel free to reach out for any inquiries or collaborations.</p>
         <form action="submit_form.php" method="post">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <input type="submit" value="Send Message">
         </form>
