@@ -12,26 +12,27 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 80vh; /* Adjust to center vertically */
+            min-height: 100vh; /* Full viewport height to center vertically */
             text-align: center;
         }
 
         /* Form Layout */
         #contact form {
             display: flex;
-            align-items: flex-start; /* Align fields and button at the top */
+            align-items: flex-start; /* Align fields and button to the top */
             justify-content: center;
-            flex-direction: row; /* Keep elements horizontal */
+            flex-direction: row; /* Place fields and button horizontally */
             width: 100%;
-            max-width: 700px;
-            gap: 20px; /* Add spacing between the fields and button */
+            max-width: 700px; /* Limit the form width */
+            gap: 40px; /* Add space between fields and the button */
         }
 
         /* Left Side Fields (Name, Email, Message) */
         .form-fields {
             display: flex;
             flex-direction: column;
-            flex: 1; /* Take up the remaining space */
+            flex: 1; /* Take up the available space */
+            gap: 15px; /* Add spacing between input fields */
         }
 
         .form-fields label {
@@ -43,7 +44,6 @@
         .form-fields textarea {
             width: 100%;
             padding: 10px;
-            margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 1rem;
@@ -51,7 +51,7 @@
 
         /* Send Message Button */
         .send-button {
-            align-self: flex-start; /* Align button to the top */
+            align-self: flex-start; /* Align button to the top of the form */
             margin-top: 10px;
         }
 
