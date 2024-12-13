@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scuba Diving Adventures</title>
+    <title>Marine Life and Adventure Photography</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header with Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Underwater</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#underwater">Underwater</a>
+                <ul class="dropdown">
+                    <li><a href="#">Fish</a></li>
+                    <li><a href="#">Coral Reefs</a></li>
+                    <li><a href="#">Sharks & Rays</a></li>
+                </ul>
+            </li>
+            <li><a href="#birds">Birds</a></li>
+            <li><a href="#reptiles">Reptiles</a>
+                <ul class="dropdown">
+                    <li><a href="#">Sea Turtles</a></li>
+                    <li><a href="#">Snakes</a></li>
+                    <li><a href="#">Lizards</a></li>
+                </ul>
+            </li>
+            <li><a href="#landscape">Landscape</a></li>
+            <li><a href="#surfing">Surfing</a></li>
+        </ul>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Explore the Deep Blue with Us!</h1>
-            <p>Discover incredible scuba diving experiences tailored just for you.</p>
-            <a href="#contact" class="cta-btn">Book Now</a>
+    <!-- Underwater Section -->
+    <section id="underwater">
+        <h2>Underwater</h2>
+        <div class="content">
+            <p>Explore the vibrant life beneath the surface with breathtaking underwater photography.</p>
+            <!-- You can add images or more content here -->
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Scuba Diving Services</h2>
-        <div class="service">
-            <img src="images/service1.jpg" alt="Diving Trip">
-            <h3>Scuba Diving Trips</h3>
-            <p>Join us for unforgettable underwater adventures.</p>
-        </div>
-        <div class="service">
-            <img src="images/service2.jpg" alt="Diving Training">
-            <h3>Diving Training</h3>
-            <p>Get certified with our professional instructors.</p>
-        </div>
-        <div class="service">
-            <img src="images/service3.jpg" alt="Equipment Rental">
-            <h3>Equipment Rental</h3>
-            <p>Rent top-quality scuba diving equipment.</p>
+    <!-- Birds Section -->
+    <section id="birds">
+        <h2>Birds</h2>
+        <div class="content">
+            <p>Discover the beauty and elegance of birds captured in stunning photography.</p>
+            <!-- Add bird-related content here -->
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We offer a variety of scuba diving services to both beginners and experienced divers. Our team is committed to providing the best underwater experiences.</p>
+    <!-- Reptiles Section -->
+    <section id="reptiles">
+        <h2>Reptiles</h2>
+        <div class="content">
+            <p>Learn about the incredible reptiles that live in coastal and marine environments.</p>
+            <!-- Add reptile-related content here -->
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Landscape Section -->
+    <section id="landscape">
+        <h2>Landscape</h2>
+        <div class="content">
+            <p>Experience the beauty of natural landscapes from around the world.</p>
+            <!-- Add landscape-related content here -->
+        </div>
+    </section>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+    <!-- Surfing Section -->
+    <section id="surfing">
+        <h2>Surfing</h2>
+        <div class="content">
+            <p>Feel the thrill of surfing through stunning photos from the world's best surf spots.</p>
+            <!-- Add surfing-related content here -->
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Scuba Diving Adventures</p>
+        <p>&copy; 2024 Marine Life and Adventure Photography</p>
     </footer>
 
 </body>
