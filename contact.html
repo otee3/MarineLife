@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - OT3 Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="marine_life.html">Marine Life</a></li>
+            <li><a href="reptiles.html">Reptiles</a></li>
+            <li><a href="birds.html">Birds</a></li>
+            <li><a href="plants.html">Plants</a></li>
+            <li><a href="surfing.html">Surfing</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li> <!-- Active Link for Contact -->
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact OT3 Photography</h2>
+        <p>Feel free to reach out for any inquiries or collaborations.</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 OT3 Photography</p>
+    </footer>
+
+</body>
+</html>
