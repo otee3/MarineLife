@@ -82,15 +82,8 @@ nav ul li .dropdown li:hover .dropdown-sub {
     width: 200px;
 }
 
-/* Make Fish Sub-Subcategory Scrollable */
-nav ul li .dropdown li .dropdown-sub {
+nav ul li .dropdown-sub {
     display: none;
-    max-height: 300px; /* Add this to limit the height */
-    overflow-y: auto;  /* Allow vertical scrolling */
-}
-
-nav ul li .dropdown li:hover .dropdown-sub {
-    display: block;
 }
 
 nav ul li .dropdown-sub li a {
