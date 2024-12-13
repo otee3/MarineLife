@@ -1,92 +1,50 @@
-/* Reset and basic styling */
-* {
-    margin: 0;
+/* Basic reset for the navigation */
+ul {
+    list-style-type: none;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* Navigation Styling */
-nav {
-    background-color: #2c3e50;
-    padding: 1rem 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
+li {
+    display: inline-block;
     position: relative;
-    margin: 0 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #ecf0f1;
-}
-
-/* Dropdown Styling */
-nav ul li:hover .dropdown {
+/* Styling the main navigation items */
+nav a {
     display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
 }
 
-.dropdown {
+nav a:hover {
+    background-color: #555;
+}
+
+/* Hide submenus by default */
+nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #34495e;
-    padding: 10px;
-    border-radius: 5px;
-    width: 200px;
+    min-width: 180px;
 }
 
-.dropdown li {
-    margin: 5px 0;
+/* Show submenus when hovering over the parent */
+nav li:hover > ul {
+    display: block;
 }
 
-.dropdown li a {
-    color: white;
-    text-decoration: none;
+/* Styling for dropdown links */
+nav ul ul li {
+    display: block;
+    background-color: #444;
 }
 
-.dropdown li a:hover {
-    color: #ecf0f1;
-}
-
-/* Section Styling */
-section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-.content {
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Add hover effect to subcategory items */
+nav ul ul li a:hover {
+    background-color: #666;
 }
