@@ -1,64 +1,113 @@
-/* Basic Styles for Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* General Page Layout */
+body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-nav > ul > li {
-    position: relative;
-    display: inline-block;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    background-color: #333;
-    color: white;
+h2 {
     text-align: center;
+    color: #333;
 }
 
-nav a:hover {
-    background-color: #555;
+p {
+    text-align: center;
+    color: #555;
 }
 
-/* Styling for Dropdown Menus */
-nav .dropdown, nav .dropdown-sub {
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown {
     display: none;
     position: absolute;
     background-color: #333;
-    z-index: 1;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    width: 200px;
+    left: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px 20px;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #575757;
+}
+
+/* Sub-Sub Dropdown - Hidden until hover on parent subcategory */
+nav ul li .dropdown li:hover .dropdown-sub {
+    display: block;
+    position: absolute;
+    left: 200px; /* Adjust if needed */
+    top: 0;
+    background-color: #333;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
     width: 200px;
 }
 
-/* Show dropdown when hovering over the parent */
-nav > ul > li:hover .dropdown {
-    display: block;
-}
-
-nav .dropdown > li:hover .dropdown-sub {
-    display: block;
-}
-
-/* Scrollable Subcategories for Fish */
-nav .dropdown-sub {
-    max-height: 300px; /* Limit the height of the list */
+/* Make Fish Sub-Subcategory Scrollable */
+nav ul li .dropdown li .dropdown-sub {
+    display: none;
+    max-height: 300px; /* Add this to limit the height */
     overflow-y: auto;  /* Allow vertical scrolling */
-    padding-right: 10px; /* Optional: Add some padding to prevent the scroll bar from overlapping the text */
 }
 
-/* Style for the dropdown items */
-nav .dropdown li, nav .dropdown-sub li {
-    padding: 8px 10px;
-    border-bottom: 1px solid #444;
+nav ul li .dropdown li:hover .dropdown-sub {
+    display: block;
 }
 
-nav .dropdown li a, nav .dropdown-sub li a {
+nav ul li .dropdown-sub li a {
+    padding: 10px 20px;
+}
+
+nav ul li .dropdown-sub li a:hover {
+    background-color: #575757;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
     color: white;
-}
-
-nav .dropdown li a:hover, nav .dropdown-sub li a:hover {
-    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
