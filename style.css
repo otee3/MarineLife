@@ -1,36 +1,50 @@
-/* General Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #2c3e50;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
+/* Basic reset for the navigation */
+ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav li {
+li {
+    display: inline-block;
     position: relative;
-    margin: 0 20px;
 }
 
+/* Styling the main navigation items */
 nav a {
-    color: #ecf0f1;
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    font-size: 18px;
-    text-t
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Hide submenus by default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+}
+
+/* Show submenus when hovering over the parent */
+nav li:hover > ul {
+    display: block;
+}
+
+/* Styling for dropdown links */
+nav ul ul li {
+    display: block;
+    background-color: #444;
+}
+
+/* Add hover effect to subcategory items */
+nav ul ul li a:hover {
+    background-color: #666;
+}
