@@ -1,7 +1,40 @@
-</ul>
-</li>
-<li><a href="../pages/surfing.html">Surfing</a></li>
-           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - OT3 Photography</title>
+   <link rel="stylesheet" href="../style.css"> <!-- Adjusted to go up one level to find style.css -->
+</head>
+<body>
+
+    <!-- Navigation Section -->
+   <nav>
+        <ul>
+            <!-- Move About to the first position -->
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/marine_life.html">Marine Life</a>
+                <ul class="dropdown">
+                    <li><a href="../pages/marine_life/california.html">California</a></li>
+                    <li><a href="../pages/marine_life/hawaii.html">Hawaii</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/reptiles.html">Reptiles</a>
+                <ul class="dropdown">
+                    <li><a href="../pages/reptiles_hawaii.html">Hawaii</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/birds.html">Birds</a>
+                <ul class="dropdown">
+                    <li><a href="../pages/birds_hawaii.html">Hawaii</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/plants.html">Plants</a>
+                <ul class="dropdown">
+                    <li><a href="../pages/plants_hawaii.html">Hawaii</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/surfing.html">Surfing</a></li>
             <li><a href="../pages/contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -12,13 +45,13 @@
         <p>Feel free to reach out for any inquiries or collaborations.</p>
         <form action="submit_form.php" method="post">
             <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required><br><br>
 
             <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required><br><br>
 
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
             <input type="submit" value="Send Message">
         </form>
