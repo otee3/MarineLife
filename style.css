@@ -1,15 +1,33 @@
-/* Base Styles for Navigation */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background and Text */
+body {
+    background-color: #121212; /* Dark black background */
+    color: #f1f1f1; /* Light gray text for readability */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark gray header */
+    color: #f1f1f1;
     padding: 10px 20px;
 }
 
 nav .logo a {
-    color: white;
+    color: #ffcc00; /* Inverted yellow for the logo */
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -26,14 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffcc00; /* Yellow links */
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #f1f1f1; /* Light gray on hover */
 }
 
 /* Mobile Menu Button */
@@ -44,14 +62,44 @@ nav ul li a:hover {
 }
 
 .menu-toggle .bar {
-    background-color: white;
+    background-color: #ffcc00; /* Yellow hamburger lines */
     height: 3px;
     width: 25px;
     margin: 3px 0;
     transition: all 0.3s ease;
 }
 
-/* Media Query for Small Screens */
+/* Content Section */
+section {
+    flex: 1; /* Push footer to the bottom */
+    padding: 20px;
+    text-align: center;
+    color: #f1f1f1; /* Light gray text */
+}
+
+/* Links in Content */
+a {
+    color: #ffcc00; /* Yellow links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f1f1f1; /* Light gray hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Menu for Small Screens */
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
