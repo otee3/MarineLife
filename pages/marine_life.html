@@ -10,34 +10,25 @@
 
     <!-- Navigation Section -->
    <nav>
-        <ul>
-            <!-- Move About to the first position -->
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/marine_life.html">Marine Life</a>
-                <ul class="dropdown">
-                    <li><a href="../pages/marine_life/california.html">California</a></li>
-                    <li><a href="../pages/marine_life/hawaii.html">Hawaii</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/reptiles.html">Reptiles</a>
-                <ul class="dropdown">
-                    <li><a href="../pages/reptiles_hawaii.html">Hawaii</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/birds.html">Birds</a>
-                <ul class="dropdown">
-                    <li><a href="../pages/birds_hawaii.html">Hawaii</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/plants.html">Plants</a>
-                <ul class="dropdown">
-                    <li><a href="../pages/plants_hawaii.html">Hawaii</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/surfing.html">Surfing</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="logo">
+        <a href="index.html">OT3 Photography</a>
+    </div>
+    <ul>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/marine_life.html">Marine Life</a></li>
+        <li><a href="../pages/reptiles.html">Reptiles</a></li>
+        <li><a href="../pages/birds.html">Birds</a></li>
+        <li><a href="../pages/plants.html">Plants</a></li>
+        <li><a href="../pages/surfing.html">Surfing</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
 
     <!-- Main Content for Marine Life -->
     <section id="marine-life">
@@ -50,10 +41,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 OT3 Photography</p>
-    </footer>
+     <!-- Footer -->
+<footer>
+    <p>&copy; 2024 OT3 Photography</p>
+</footer>
 
+<!-- JavaScript for Mobile Menu -->
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
