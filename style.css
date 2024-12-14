@@ -27,7 +27,7 @@ nav {
 }
 
 nav .logo a {
-    color: #ffcc00; /* Inverted yellow for the logo */
+    color: #f1f1f1; /* white */
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -44,14 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00; /* Yellow links */
+    color: #f1f1f1; /* white links */
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f1f1f1; /* Light gray on hover */
+    color: #888; /* Light gray on hover */
 }
 
 /* Mobile Menu Button */
@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .menu-toggle .bar {
-    background-color: #ffcc00; /* Yellow hamburger lines */
+    background-color: #f1f1f1; /* white hamburger lines */
     height: 3px;
     width: 25px;
     margin: 3px 0;
@@ -79,13 +79,13 @@ section {
 
 /* Links in Content */
 a {
-    color: #ffcc00; /* Yellow links */
+    color: #888; /* grey links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #f1f1f1; /* Light gray hover */
+    color: #888; /* Light gray hover */
 }
 
 /* Footer */
