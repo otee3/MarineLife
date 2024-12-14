@@ -42,9 +42,19 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 OT3 Photography</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 OT3 Photography</p>
+</footer>
 
+<!-- JavaScript for Mobile Menu -->
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
