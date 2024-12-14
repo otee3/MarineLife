@@ -1,15 +1,15 @@
 /* Base Styles for Navigation */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo to the left, menu to the right */
     align-items: center;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light gray text */
+    background-color: #121212;
+    color: #e0e0e0;
     padding: 10px 20px;
 }
 
 nav .logo a {
-    color: #e0e0e0; /* Light text */
+    color: #e0e0e0;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -22,18 +22,18 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px; /* Add spacing between items */
 }
 
 nav ul li a {
-    color: #e0e0e0; /* Light gray for links */
+    color: #e0e0e0;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00adb5; /* Teal accent on hover */
+    color: #00adb5; /* Accent hover color */
 }
 
 /* Mobile Menu Button */
@@ -44,7 +44,7 @@ nav ul li a:hover {
 }
 
 .menu-toggle .bar {
-    background-color: #e0e0e0; /* Light bars for menu toggle */
+    background-color: #e0e0e0;
     height: 3px;
     width: 25px;
     margin: 3px 0;
@@ -56,7 +56,7 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #1f1f1f; /* Darker background for mobile menu */
+        background-color: #1f1f1f;
         position: absolute;
         top: 60px;
         left: 0;
@@ -80,25 +80,4 @@ nav ul li a:hover {
     nav ul li a {
         font-size: 1.2em;
     }
-}
-
-/* General Body Styling */
-body {
-    background-color: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Light text */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1f1f1f; /* Slightly lighter dark */
-    color: #e0e0e0;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
 }
