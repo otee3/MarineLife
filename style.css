@@ -53,19 +53,9 @@ nav ul li a {
     text-align: center; /* Center the content inside the link */
 }
 
-nav ul li a .marine {
-    display: block; /* Makes "Marine" a block element */
-}
-
-nav ul li a .life {
-    display: block; /* Makes "Life" a block element */
-    margin-top: 5px; /* Adds space between the two words */
-}
-
 nav ul li a:hover {
     background-color: #555; /* Slightly lighter gray on hover */
     transform: scale(1.2);
-    text-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
 }
 
 /* Mobile Menu Button */
@@ -73,6 +63,7 @@ nav ul li a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
 }
 
 .menu-toggle .bar {
@@ -85,9 +76,8 @@ nav ul li a:hover {
 
 /* Hover Effect on Hamburger Icon */
 .menu-toggle:hover .bar {
-    background-color: #ddd; /* Light gray on hover */
+    background-color: #555; /* Light gray on hover */
     transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 113, 255, 0.8);
 }
 
 /* Content Section */
