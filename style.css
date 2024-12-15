@@ -50,6 +50,16 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center; /* Center the content inside the link */
+}
+
+nav ul li a .marine {
+    display: block; /* Makes "Marine" a block element */
+}
+
+nav ul li a .life {
+    display: block; /* Makes "Life" a block element */
+    margin-top: 5px; /* Adds space between the two words */
 }
 
 nav ul li a:hover {
