@@ -65,7 +65,7 @@ nav ul li a .life {
 nav ul li a:hover {
     background-color: #555; /* Slightly lighter gray on hover */
     transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+    text-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
 }
 
 /* Mobile Menu Button */
