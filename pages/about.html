@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - OT3 Photography</title>
-    <link rel="stylesheet" href="../style.css"> <!-- Adjusted to go up one level to find style.css -->
-    <script src="../loadHTML.js" defer></script> <!-- Link to the JavaScript file that loads header and footer -->
-    
+   <link rel="stylesheet" href="../style.css"> <!-- Adjusted to go up one level to find style.css -->
     <style>
         /* Top Button Styles */
         #topBtn {
@@ -32,9 +30,28 @@
 </head>
 <body>
 
-    <!-- Header will be loaded dynamically here -->
-    <div id="header"></div>
-
+    <!-- Navigation Section -->
+   <nav>
+    <div class="logo">
+        <a href="../index.html"><img src="path/to/logo.png"></a>
+    </div>
+    <ul>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/marine_life.html">Marine Life</a></li>
+        <li><a href="../pages/reptiles.html">Reptiles</a></li>
+        <li><a href="../pages/birds.html">Birds</a></li>
+        <li><a href="../pages/greenery.html">Greenery</a></li>
+        <li><a href="../pages/surfing.html">Surfing</a></li>
+        <li><a href="../pages/volcanoes.html">Volcanoes</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+    
     <!-- About Section -->
     <section id="about">
         <h2>About</h2>
@@ -43,31 +60,23 @@
 
         <h3>Meet the Photographer</h3>
         <p>Hi, I'm Olen (Olie) Turner III, the photographer behind OT3 Photography. I've always had a deep fascination with nature and its beauty. Photography has been my way of capturing and sharing these moments, allowing others to experience the world through my lens.</p>
+
     </section>
 
-    <!-- Footer will be loaded dynamically here -->
-    <div id="footer"></div>
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2024 OT3 Photography</p>
+</footer>
 
-    <!-- JavaScript for Top Button -->
-    <script>
-        // Get the button
-        const topBtn = document.getElementById("topBtn");
+<!-- JavaScript for Mobile Menu -->
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                topBtn.style.display = "block";
-            } else {
-                topBtn.style.display = "none";
-            }
-        };
-
-        // When the user clicks on the button, scroll to the top of the document
-        topBtn.onclick = function() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        };
-    </script>
-
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
