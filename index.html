@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OT3 Photography</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Top Button Styles */
+        #topBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #444; /* Dark gray background */
+            color: #f1f1f1; /* Light text */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        #topBtn:hover {
+            background-color: #666; /* Lighter gray on hover */
+        }
+    </style>
 </head>
 <body>
 
@@ -22,7 +44,6 @@
             <li><a href="pages/surfing.html">Surfing</a></li>
             <li><a href="pages/volcanoes.html">Volcanoes</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
-    
         </ul>
 
         <!-- Mobile Menu Button -->
@@ -39,6 +60,9 @@
         <p>Click the categories in the navigation bar to explore beautiful photography.</p>
     </section>
 
+    <!-- Scroll to Top Button -->
+    <button id="topBtn" onclick="scrollToTop()">Top</button>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 OT3 Photography</p>
@@ -53,6 +77,25 @@
         mobileMenu.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
+
+        // Show or hide the Top button based on scroll position
+        const topBtn = document.getElementById("topBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to the top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
     </script>
 
 </body>
