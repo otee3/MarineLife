@@ -103,6 +103,28 @@ footer {
     width: 100%;
 }
 
+/* Top Button Styles */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* Match navigation and footer */
+    color: #f1f1f1; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#topBtn:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    color: #ddd;
+}
+
 /* Mobile Menu for Small Screens */
 @media screen and (max-width: 768px) {
     nav ul {
