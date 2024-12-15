@@ -82,6 +82,18 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
+/* Hover Effect on Hamburger Icon */
+.menu-toggle .bar:hover {
+    background-color: #ddd; /* Light gray on hover */
+}
+
+/* Mobile Menu for Small Screens */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+
 /* Content Section */
 section {
     flex: 1; /* Push footer to the bottom */
