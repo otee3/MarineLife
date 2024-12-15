@@ -64,7 +64,8 @@ nav ul li a .life {
 
 nav ul li a:hover {
     background-color: #555; /* Slightly lighter gray on hover */
-    color: #ddd; /* Light gray text on hover */
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
 }
 
 /* Mobile Menu Button */
@@ -85,7 +86,7 @@ nav ul li a:hover {
 /* Hover Effect on Hamburger Icon */
 .menu-toggle:hover .bar {
     background-color: #ddd; /* Light gray on hover */
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2);
     box-shadow: 0 0 10px rgba(0, 113, 255, 0.8);
 }
 
