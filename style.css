@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 /* Hover Effect on Hamburger Icon */
 .menu-toggle:hover .bar {
-    background-color: #555; /* Light gray on hover */
+    background-color: #ddd; /* Light gray on hover */
     transform: scale(1.2);
 }
 
