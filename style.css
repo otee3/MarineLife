@@ -41,17 +41,21 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
+    width: 100%; /* Ensure the clickable area spans full width */
 }
 
 nav ul li a {
-    color: #f1f1f1; /* white links */
+   display: block; /* Makes the link fill the entire list item */
+    padding: 10px 15px; /* Add padding to create clickable area */
+    color: #f1f1f1; /* White links */
     text-decoration: none;
     font-size: 1em;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #888; /* Light gray on hover */
+    background-color: #555; /* Slightly lighter gray on hover */
+    color: #ddd; /* Light gray text on hover */
 }
 
 /* Mobile Menu Button */
@@ -122,10 +126,13 @@ footer {
     }
 
     nav ul li {
-        margin: 15px 0;
+        margin: 0; /* Remove margin for better alignment */
+        width: 100%; /* Ensure full width for list items */
     }
 
     nav ul li a {
+        display: block;
+        padding: 15px; /* Increase padding for better tap area */
         font-size: 1.2em;
     }
 }
