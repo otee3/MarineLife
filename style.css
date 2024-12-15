@@ -85,6 +85,7 @@ nav ul li a:hover {
 /* Hover Effect on Hamburger Icon */
 .menu-toggle:hover .bar {
     background-color: #ddd; /* Light gray on hover */
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
 }
 
 /* Content Section */
