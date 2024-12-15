@@ -63,7 +63,6 @@ nav ul li a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px;
 }
 
 .menu-toggle .bar {
