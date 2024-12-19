@@ -30,8 +30,31 @@
 </head>
 <body>
 
-    <!-- Placeholder for Header -->
-    <div id="header"></div>
+    <!-- Navigation Section -->
+    <nav>
+        <div class="logo">
+             <a href="index.html">
+                <img src="images/logo.png" alt="OT3 Photography Logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/marine_life.html">Marine Life</a></li>
+            <li><a href="pages/reptiles.html">Reptiles</a></li>
+            <li><a href="pages/birds.html">Birds</a></li>
+            <li><a href="pages/greenery.html">Greenery</a></li>
+            <li><a href="pages/surfing.html">Surfing</a></li>
+            <li><a href="pages/volcanoes.html">Volcanoes</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <section id="intro">
@@ -42,17 +65,10 @@
     <!-- Scroll to Top Button -->
     <button id="topBtn" onclick="scrollToTop()">Top</button>
 
-     <!-- Placeholder for Footer -->
-    <div id="footer"></div>
-
-    <!-- JavaScript to load header and footer -->
-    <script src="assets/js/loadHTML.js"></script>
-
-    <script>
-        // Load the header and footer from the HTML files
-        loadHTML('partials/header.html', '#header');
-        loadHTML('partials/footer.html', '#footer');
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 OT3 Photography</p>
+    </footer>
 
     <!-- JavaScript for Mobile Menu -->
     <script>
