@@ -33,7 +33,7 @@ nav .logo a {
 }
 
 nav .logo img {
-    width: 20%; /* Set the width as a percentage of the parent container */
+    width: 30%; /* Set the width as a percentage of the parent container */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures the logo scales properly */
     transition: transform 0.3s ease; /* Optional: Smooth transition if you want a hover effect */
