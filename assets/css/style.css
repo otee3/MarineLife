@@ -32,6 +32,17 @@ nav .logo a {
     font-size: 1.5em;
 }
 
+nav .logo img {
+    height: 50px; /* Adjust the height of your logo */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensures the logo scales properly */
+    transition: transform 0.3s ease;
+}
+
+nav .logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
