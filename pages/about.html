@@ -4,56 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - OT3 Photography</title>
-   <link rel="stylesheet" href="../assets/css/style.css"> <!-- Adjusted to go up one level to find style.css -->
-    <style>
-        /* Top Button Styles */
-        #topBtn {
-            display: none; /* Hidden by default */
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background-color: #444; /* Dark gray background */
-            color: #f1f1f1; /* Light text */
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
-        }
-
-        #topBtn:hover {
-            background-color: #666; /* Lighter gray on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/style.css"> <!-- Adjusted to go up one level to find style.css -->
 </head>
 <body>
 
-    <!-- Navigation Section -->
-   <nav>
-    <div class="logo">
-        <a href="../index.html">
-            <img src="../images/logo.png" alt="OT3 Photography Logo" class="logo-img">
-        </a>
-    </div>
-    <ul>
-        <li><a href="../pages/about.html">About</a></li>
-        <li><a href="../pages/marine_life.html">Marine Life</a></li>
-        <li><a href="../pages/reptiles.html">Reptiles</a></li>
-        <li><a href="../pages/birds.html">Birds</a></li>
-        <li><a href="../pages/greenery.html">Greenery</a></li>
-        <li><a href="../pages/surfing.html">Surfing</a></li>
-        <li><a href="../pages/volcanoes.html">Volcanoes</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
-    </ul>
-    <div class="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-</nav>
-    
+    <!-- Placeholder for Header -->
+    <div id="header"></div>
+
     <!-- About Section -->
     <section id="about">
         <h2>About</h2>
@@ -62,23 +19,30 @@
 
         <h3>Meet the Photographer</h3>
         <p>Hi, I'm Olen (Olie) Turner III, the photographer behind OT3 Photography. I've always had a deep fascination with nature and its beauty. Photography has been my way of capturing and sharing these moments, allowing others to experience the world through my lens.</p>
-
     </section>
 
-    <!-- Footer -->
-<footer>
-    <p>&copy; 2024 OT3 Photography</p>
-</footer>
+    <!-- Placeholder for Footer -->
+    <div id="footer"></div>
 
-<!-- JavaScript for Mobile Menu -->
-<script>
-    // Mobile Menu Toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+    <!-- JavaScript to load header and footer -->
+    <script src="../assets/js/loadHTML.js"></script>
 
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-</script>
+    <script>
+        // Load the header and footer from the HTML files
+        loadHTML('../header.html', '#header');
+        loadHTML('../footer.html', '#footer');
+    </script>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
