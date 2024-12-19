@@ -161,8 +161,17 @@ footer {
     }
 
     .menu-toggle {
-        display: flex;
-    }
+    display: block; /* Show the hamburger button on small screens */
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff; /* White bars */
+    height: 3px;
+    width: 30px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
 
     nav ul li {
         margin: 0; /* Remove margin for better alignment */
